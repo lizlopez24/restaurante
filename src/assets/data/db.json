@@ -35,6 +35,18 @@
       "producto": "Spaghetti al Pesto con Camarones",
       "precio": 15,
       "id": 1
+    },
+    {
+      "mesa": 2,
+      "producto": "Quiche Lorraine",
+      "precio": 7,
+      "id": 2
+    },
+    {
+      "mesa": 6,
+      "producto": "Ratatouille",
+      "precio": 11,
+      "id": 3
     }
   ]
 }

@@ -18,12 +18,12 @@
                     <img class="card-img-top" src="{{ item.imagen }}" alt="" />
                     <div class="card-overlay">
                       <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary" (click)="registrar(item)">
+                        <button type="button" class="btn btn-secondary" (click)="registrar(item)" data-bs-toggle="modal" data-bs-target="#myModal">
                           <i
                             ><img src="../../../assets/images/icons/shopping-cart.svg"
                           /></i>
                         </button>
-                        <button type="button" class="btn btn-light" (click)="registrar(item)">Agregar</button>
+                        <button type="button" class="btn btn-light" (click)="registrar(item)" data-bs-toggle="modal" data-bs-target="#myModal">Agregar</button>
                       </div>
                     </div>
                     <div class="details-btn">
