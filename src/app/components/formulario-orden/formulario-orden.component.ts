@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { OrdenService } from '../../services/orden.service';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ProductosService } from '../../services/productos.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-orden',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,RouterLink],
   templateUrl: './formulario-orden.component.html',
   styleUrl: './formulario-orden.component.css'
 })

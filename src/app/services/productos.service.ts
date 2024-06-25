@@ -18,4 +18,7 @@ export class ProductosService {
   getProductos():Observable<any>{
     return this.http.get(this.API_PRODUCTOS)
   }
+  putProducto(producto:any):Observable<any>{
+    return this.http.put(`${this.API_PRODUCTOS}/${producto.id}`,producto)
+  }
 }
