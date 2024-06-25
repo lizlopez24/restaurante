@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Lizeth Morales",
+      "email": "liz@mail.com",
+      "password": "$2a$10$9Dheh6FSIBIcaxtzTVppt.Sl97GdYIta68ZCL2KwLrVH/DOr6kFGu",
+      "rol": "mesero"
+    },
+    {
+      "email": "dani@mail.com",
+      "password": "$2a$10$FxWoAksrTN0MmkeflUxLtOlEB5wtMEfEccduEhIl8cMzPOQkgYzUC",
+      "rol": "admin",
+      "nombre": "Daniel Arcentales",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Carolina Venegas",
+      "email": "copis@mail.com",
+      "password": "$2a$10$sJTQ1ebvlTUtdlFHLgtVWe9jiVV6Ep/zGJPMmYy0x6sLf/hgye6Fq",
+      "rol": "admin"
+    },
+    {
+      "email": "julio@mail.com",
+      "password": "$2a$10$gCQ/72bmUdXLenH/AhsquuM5LWuESpMn6uwrRenO9aJ.nfGANyQnq",
+      "nombre": "Julio Rosero",
+      "rol": "mesero",
+      "id": 4
+    }
+  ],
+  "producto": [
+    {
+      "id": 1,
+      "mesa": 3,
+      "producto": "Sopa de pollo",
+      "precio": 3.5
+    },
+    {
+      "mesa": 3,
+      "producto": "Arroz con camaron",
+      "precio": 11,
+      "id": 2
+    },
+    {
+      "mesa": 1,
+      "producto": "Capuccino",
+      "precio": 2.35,
+      "id": 3
+    },
+    {
+      "mesa": 2,
+      "producto": "Jugo",
+      "precio": 1.5,
+      "id": 4
+    },
+    {
+      "mesa": 2,
+      "producto": "Cafe",
+      "precio": null,
+      "id": 5
+    },
+    {
+      "mesa": 1,
+      "producto": "sopa",
+      "precio": 3,
+      "id": 6
+    }
+  ]
+}

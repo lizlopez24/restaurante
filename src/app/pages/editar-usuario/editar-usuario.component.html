@@ -1,0 +1,29 @@
+<div class="container">
+    <h3>Editar Usuario</h3>
+    <form (ngSubmit)="actualizar(formulario)" #formulario="ngForm">
+        <div class="mb-3 mt-3">
+            <label for="id" class="form-label">ID:</label>
+            <input type="number" class="form-control" id="id" placeholder="Ingresar id" name="id" [(ngModel)]="id">
+          </div>
+      <div class="mb-3 mt-3">
+        <label for="nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresar nombre" name="nombre" [(ngModel)]="nombre">
+      </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresar email" name="email" [(ngModel)]="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingresar password" name="password" [(ngModel)]="password">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="rol" class="form-label">Rol:</label>
+            <select name="rol" id="rol" [(ngModel)]="rol">
+                <option value="mesero">Mesero</option>
+                <option value="admin">Administrador</option>
+            </select>
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+</div>

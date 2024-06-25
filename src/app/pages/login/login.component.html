@@ -1,0 +1,14 @@
+<div class="container">
+    <h3>Iniciar sesión</h3>
+    <form (ngSubmit)="login(formulario)" #formulario="ngForm">
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresar email" name="email" [(ngModel)]="email">
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingresar password" name="password" [(ngModel)]="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+</div>

@@ -1,0 +1,37 @@
+<div class="container">
+    <div>
+        <h4>Elige la mesa</h4>
+        <label for="mesa" class="form-label">Mesa:</label>
+        <input type="number" class="form-control" id="mesa" placeholder="Ingresar mesa" name="mesa" [(ngModel)]="mesa">
+    </div>
+</div>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Mesa</th>
+            <th>Producto</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+            @if(mesa!=0){
+            @for (item of ordenes; track item) {
+                    @if (mesa==item.mesa) {
+                        <tr>
+                            <td>{{item.mesa}}</td>
+                            <td>{{item.producto}}</td>
+                            <td>{{item.precio}}</td>
+                          </tr>
+                    }
+                }
+            }
+            <tr>
+                <td colspan="2" style="text-align: right;">Total:</td>
+                <td >{{total}}</td>
+              </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-primary"(click)="calcularTotal()">Calcular Total</button>
+      
+</div>
