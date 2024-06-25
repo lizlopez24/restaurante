@@ -23,6 +23,7 @@
                             <td>{{item.producto}}</td>
                             <td>{{item.precio}}</td>
                           </tr>
+                          
                     }
                 }
             }
@@ -33,5 +34,6 @@
         </tbody>
       </table>
       <button class="btn btn-primary"(click)="calcularTotal()">Calcular Total</button>
+      <button class="btn btn-success" [routerLink]="['/editarOrden',mesa]" >Editar Orden</button>
       
 </div>

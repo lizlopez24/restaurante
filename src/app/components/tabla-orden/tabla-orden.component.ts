@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { OrdenService } from '../../services/orden.service';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tabla-orden',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './tabla-orden.component.html',
   styleUrl: './tabla-orden.component.css'
 })
