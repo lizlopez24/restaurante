@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ProductosService } from '../../services/productos.service';
 import { FormsModule, NgForm } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-menu',
@@ -12,12 +12,14 @@ import { RouterLink } from '@angular/router';
 })
 export class FormularioMenuComponent {
   servicio=inject(ProductosService)
+  router = inject(Router);
   producto:any;
   precio:any;
   imagen:any;
   id:any;
 
   guardar(formulario:any){
-    this.servicio.postProductos(formulario.value).subscribe()
+    this.servicio.putProducto(formulario.value).subscribe()
+    this.router.navigate(['regOrden']);
   }
 }

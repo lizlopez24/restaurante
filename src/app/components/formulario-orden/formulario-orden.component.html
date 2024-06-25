@@ -39,7 +39,7 @@
                     <div class="price" [(ngModel)]="precio">
                       <span class="text-warning">Price: ${{ item.precio }}</span>
                     </div>
-                  <a [routerLink]="['/formularioMenu']">Editar Producto</a>
+                  <a [routerLink]="['/formularioMenu',item.id]">Editar Producto</a>
                   </div>
                 </div>
               </div>

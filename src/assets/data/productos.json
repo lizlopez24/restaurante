@@ -2,9 +2,9 @@
   "productos": [
     {
       "id": 1,
-      "producto": "El cat",
-      "precio": "2000",
-      "imagen": "https://img.freepik.com/vector-gratis/lindo-gato-chef-cocina-dibujos-animados-vector-icono-ilustracion-comida-animal-icono-concepto-vector-aislado_138676-4374.jpg?w=826&t=st=1719325945~exp=1719326545~hmac=b267f8229f201c9ea973e49027d8c1e04aff89d6a146b3975bc9b76e66624d50"
+      "producto": "El Gran Cat",
+      "precio": "23",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg"
     },
     {
       "id": 2,
@@ -77,6 +77,12 @@
       "precio": "20",
       "imagen": "https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcT1rwHV76cR1gwVhjIq9JlfkbZEy6wBK-lg7NhUa__l8L4Klm40-tkX8lpiBWMUDTx0",
       "id": 13
+    },
+    {
+      "producto": "Pizza",
+      "precio": "15",
+      "imagen": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg",
+      "id": 14
     }
   ]
 }
