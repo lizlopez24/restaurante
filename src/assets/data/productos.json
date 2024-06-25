@@ -1,0 +1,70 @@
+{
+    "productos": [
+    {
+      "id": 1,
+      "producto": "Cordon Bleu de Pollo",
+      "precio": 10,
+      "imagen": "https://www.southernliving.com/thmb/Q8iJKfkBh496LFUBG0q_DlcOZNA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/27697_SupT_Ham_025-94a2d06e983b4b0b8da07b7309e934cf.jpg"
+    },
+    {
+      "id": 2,
+      "producto": "Spaghetti al Pesto con Camarones",
+      "precio": 15,
+      "imagen": "https://cdn7.kiwilimon.com/brightcove/9581/640x640/9581.jpg.webp"
+    },
+    {
+       "id": 3,
+      "producto": "Ratatouille",
+      "precio": 11,
+      "imagen": "https://www.allrecipes.com/thmb/F1rucOY3FQT5Ic0oyxdLoqU_yKc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/222006-disneys-ratatouille-DDMFS-4x3-36eb15843ab548a79e7aab761dac92e1.jpg"
+    },
+    {
+        "id": 4,
+       "producto": "Quiche Lorraine",
+       "precio": 7,
+       "imagen": "https://www.onceuponachef.com/images/2022/03/quiche-lorraine-1-1-1200x1552.jpg"
+     },
+     {
+        "id": 5,
+       "producto": "Tomate relleno de queso ahumado",
+       "precio": 12,
+       "imagen": "https://www.hogarmania.com/archivos/201109/tomate-relleno-de-queso-ahumado-321x171x80xX.jpg"
+     },
+     {
+        "id": 6,
+       "producto": "Sopa de Castañas",
+       "precio": 6,
+       "imagen": "https://www.hogarmania.com/archivos/201801/6107-2-sopa-de-castanas-con-licor-de-hierbas-al-cardamomo-xl-321x171x80xX.jpg"
+     },
+     {
+        "id": 7,
+       "producto": "Tacos de merluza",
+       "precio": 10,
+       "imagen": "https://www.hogarmania.com/archivos/201711/6066-2-berasategui-taco-de-merluza-con-kokotxas-al-pil-pil-xl-321x171x80xX.jpg"
+     },
+     {
+        "id": 8,
+       "producto": "Tartar de salmón fresco",
+       "precio": 17,
+       "imagen": "https://www.hogarmania.com/archivos/201106/tartar-de-salmon-fresco-y-ahumado-con-vichyssoise-y-esparragos-verdes-xl-321x171x80xX.jpg"
+     },
+     {
+        "id": 9,
+       "producto": "Ensalada de pato confitado con puerros",
+       "precio": 18,
+       "imagen": "https://www.hogarmania.com/archivos/201109/ensalada-de-pato-confitado-con-puerros-y-mostaza-321x171x80xX.jpg"
+     },
+     {
+        "id": 10,
+       "producto": "Crepes de salmón ahumado",
+       "precio": 9,
+       "imagen": "https://www.hogarmania.com/archivos/201109/crepes-de-salmon-ahumado-con-salsa-de-yogur-y-naranja-321x171x80xX.jpg"
+     },
+     {
+        "id": 11,
+       "producto": "Espárragos blancos en dos texturas",
+       "precio": 9,
+       "imagen": "https://www.hogarmania.com/archivos/201109/esparragos-blancos-en-dos-texturas-con-crema-espumosa-de-queso-fresco-y-aceituna-negra-321x171x80xX.jpg"
+     }
+  ]
+}
