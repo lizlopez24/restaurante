@@ -1,10 +1,12 @@
 <div class="container">
     <h3>Registrar tu orden</h3>
-    <form (ngSubmit)="registrar(formulario)" #formulario="ngForm">
+    <form (ngSubmit)="guardarMesa(formulario)" #formulario="ngForm">
       <div class="mb-3 mt-3">
         <label for="mesa" class="form-label">Mesa:</label>
-        <input type="number" class="form-control" id="mesa" placeholder="Ingresar mesa" name="mesa" [(ngModel)]="mesa">
+        <input type="number" class="form-control" id="mesa" placeholder="Ingresar mesa" name="mesa" [(ngModel)]="mesa" #mesa>
+        <button type="submit" class="btn btn-light" (click)="guardarMesa(formulario)">Agregar</button>
       </div>
+    </form> 
       <div class="mb-3 mt-3">
         <div class="container py-5">
           <div class="row">
@@ -32,12 +34,10 @@
                       <a
                         href="#"
                         class="text-muted"
-                        style="text-decoration: none; margin: 5px; font-weight: bold" [(ngModel)]="producto"
-                        >{{ item.producto }} </a
-                      >
+                        style="text-decoration: none; margin: 5px; font-weight: bold">{{ item.producto }} </a>                      
                     </small>
                     <div class="price">
-                      <span class="text-warning" [(ngModel)]="precio">Price: ${{ item.precio }} </span>
+                      <span class="text-warning" #precio>{{ item.precio }} </span>
                     </div>
                   </div>
                 </div>
@@ -46,17 +46,7 @@
             } 
           </div>
         </div>
-
-        <label for="producto" class="form-label">Producto:</label>
-        <input type="text" class="form-control" id="producto" placeholder="Ingresar producto" name="producto" [(ngModel)]="producto">
       </div>
-      <div class="mb-3 mt-3">
-        <label for="precio" class="form-label">Precio:</label>
-        <input type="number" class="form-control" id="precio" placeholder="Ingresar precio" name="precio" [(ngModel)]="precio">
-      </div>
-       
-        <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Submit</button>
-      </form> 
 </div>
 <div class="modal" id="myModal">
     <div class="modal-dialog">

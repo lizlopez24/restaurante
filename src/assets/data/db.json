@@ -30,5 +30,11 @@
     }
   ],
   "producto": [
+    {
+      "mesa": 2,
+      "producto": "Spaghetti al Pesto con Camarones",
+      "precio": 15,
+      "id": 1
+    }
   ]
 }
