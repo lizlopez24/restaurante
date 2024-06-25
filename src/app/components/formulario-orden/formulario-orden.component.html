@@ -1,11 +1,52 @@
 <div class="container">
-    <h3>Registrar los productos de tu orden</h3>
+    <h3>Registrar tu orden</h3>
     <form (ngSubmit)="registrar(formulario)" #formulario="ngForm">
       <div class="mb-3 mt-3">
         <label for="mesa" class="form-label">Mesa:</label>
         <input type="number" class="form-control" id="mesa" placeholder="Ingresar mesa" name="mesa" [(ngModel)]="mesa">
       </div>
       <div class="mb-3 mt-3">
+        <div class="container py-5">
+          <div class="row">
+            @for (item of productosRegistrado; track item) { 
+            <div class="col-lg-3 my-2">
+              <div class="product_card">
+                <div class="card border-0">
+                  <div class="card-header bg-transparent border-0 p-0">
+                    <img class="card-img-top" src="{{ item.image }}" alt="" />
+                    <div class="card-overlay">
+                      <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="button" class="btn btn-secondary" (click)="registrar(item)">
+                          <i
+                            ><img src="../../../assets/images/icons/shopping-cart.svg"
+                          /></i>
+                        </button>
+                        <button type="button" class="btn btn-light" (click)="registrar(item)">Add to cart</button>
+                      </div>
+                    </div>
+                    <div class="details-btn">
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <small>
+                      <a
+                        href="#"
+                        class="text-muted"
+                        style="text-decoration: none; margin: 5px; font-weight: bold"
+                        >{{ item.producto }}</a
+                      >
+                    </small>
+                    <div class="price">
+                      <span class="text-warning">Price: ${{ item.precio }}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            } 
+          </div>
+        </div>
+
         <label for="producto" class="form-label">Producto:</label>
         <input type="text" class="form-control" id="producto" placeholder="Ingresar producto" name="producto" [(ngModel)]="producto">
       </div>
