@@ -15,8 +15,11 @@ export class OrdenService {
     return this.http.post(this.API_ORDEN,orden)
   }
   
-  getOrdenes():Observable<any>{
+  getOrden():Observable<any>{
     return this.http.get(this.API_ORDEN)
+  }
+  putOrden(orden: any): Observable <any>{
+    return this.http.put(`${this.API_ORDEN}/${orden.mesa}`, orden)
   }
 
 }

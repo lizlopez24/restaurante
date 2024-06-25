@@ -1,1 +1,25 @@
-<p>editar-orden works!</p>
+<div class="container">
+    <h3>Editar Orden</h3>
+    <form (ngSubmit)="editar(formulario)" #formulario="ngForm">
+        <div class="mb-3 mt-3">
+            <label for="id" class="form-label">ID:</label>
+            <input type="number" class="form-control" id="id" placeholder="Ingresar id" name="id" [(ngModel)]="id">
+          </div>
+      <div class="mb-3 mt-3">
+        <label for="mesa" class="form-label">Mesa:</label>
+        <input type="text" class="form-control" id="mesa" placeholder="Ingresar mesa" name="mesa" [(ngModel)]="mesa">
+      </div>
+        <div class="mb-3 mt-3">
+          <label for="producto" class="form-label">Producto:</label>
+          <input type="text" class="form-control" id="producto" placeholder="Ingresar nombre del producto" name="producto" [(ngModel)]="producto">
+        </div>
+        <div class="mb-3">
+          <label for="precio" class="form-label">Precio:</label>
+          <input type="number" class="form-control" id="precio" placeholder="Ingresar precio" name="precio" [(ngModel)]="precio">
+        </div>
+     
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="" class="btn btn-warning">Regresar</a>
+
+      </form> 
+</div>
