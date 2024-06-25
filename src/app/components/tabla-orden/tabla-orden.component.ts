@@ -17,7 +17,7 @@ export class TablaOrdenComponent {
   total=0;
 
   ngOnInit() {
-    this.servicio.getOrden().subscribe(p=>{
+    this.servicio.getOrdenes().subscribe(p=>{
       this.ordenes=p
     })
   }
