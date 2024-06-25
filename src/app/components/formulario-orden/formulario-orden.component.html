@@ -1,10 +1,19 @@
-<div class="container">
-    <h3>Registrar tu orden</h3>
-    <form (ngSubmit)="guardarMesa(formulario)" #formulario="ngForm">
-      <div class="mb-3 mt-3">
-        <label for="mesa" class="form-label">Mesa:</label>
-        <input type="number" class="form-control" id="mesa" placeholder="Ingresar mesa" name="mesa" [(ngModel)]="mesa" #mesa>
-        <button type="submit" class="btn btn-light" (click)="guardarMesa(formulario)">Agregar</button>
+<div class="container py-2" style="width: 90%;">
+    <h3 class="text-center">Registra tu orden</h3>
+    <form (ngSubmit)="guardarMesa(formulario)" #formulario="ngForm" class="mesa-form">
+      <div class="form-group">
+        <label for="mesa" class="form-label">Selecciona tu mesa:</label>
+        <div class="input-group">
+          <input type="number" 
+                 class="form-control" 
+                 id="mesa" 
+                 placeholder="Ingresar número de mesa" 
+                 name="mesa" 
+                 [(ngModel)]="mesa" 
+                 #mesa 
+                 required>
+          <button type="submit" class="btn btn-primary">Agregar</button>
+        </div>
       </div>
     </form> 
       <div class="mb-3 mt-3">
@@ -37,7 +46,7 @@
                         style="text-decoration: none; margin: 5px; font-weight: bold">{{ item.producto }} </a>                      
                     </small>
                     <div class="price">
-                      <span class="text-warning" #precio>{{ item.precio }} </span>
+                      <span class="text-warning" #precio> ${{ item.precio }} </span>
                     </div>
                   </div>
                 </div>

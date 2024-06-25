@@ -31,10 +31,46 @@
   ],
   "producto": [
     {
+      "id": 1,
+      "mesa": 3,
+      "producto": "Sopa de pollo",
+      "precio": 3.5
+    },
+    {
+      "mesa": 3,
+      "producto": "Arroz con camaron",
+      "precio": 11,
+      "id": 2
+    },
+    {
+      "mesa": 1,
+      "producto": "Capuccino",
+      "precio": 2.35,
+      "id": 3
+    },
+    {
       "mesa": 2,
-      "producto": "Spaghetti al Pesto con Camarones",
-      "precio": 15,
-      "id": 1
+      "producto": "Jugo",
+      "precio": 1.5,
+      "id": 4
+    },
+    {
+      "mesa": 2,
+      "producto": "Cafe",
+      "precio": null,
+      "id": 5
+    },
+    {
+      "mesa": 1,
+      "producto": "sopa",
+      "precio": 3,
+      "id": 6
+    },
+    {
+      "mesa": 4,
+      "producto": "Espárragos blancos en dos texturas",
+      "precio": 9,
+      "id": 8
     }
   ]
 }
