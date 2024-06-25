@@ -25,4 +25,8 @@ export class OrdenService {
     return this.http.put(`${this.API_ORDEN}/${orden.mesa}`, orden)
   }
 
+  deleteProducto(id: any): Observable<any> {
+    return this.http.delete(`${this.API_ORDEN}/${id}`);
+  }
+
 }

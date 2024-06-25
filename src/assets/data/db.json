@@ -27,20 +27,34 @@
       "nombre": "Julio Rosero",
       "rol": "mesero",
       "id": 4
+    },
+    {
+      "email": "pao@mail.com",
+      "password": "$2a$10$x0/h4YZHgni97p4Z6bsZLuYbvOeb7Wr9Zn95VE5BlQiIlK38i3/A.",
+      "nombre": "Pao ",
+      "rol": "admin",
+      "id": 5
+    },
+    {
+      "email": "pablo@mail.com",
+      "password": "$2a$10$/XJzWuzAWxAmSDji3kC9B.DYQyr8g2y6zVrRAKGHPZoe7ERFVARca",
+      "nombre": "Pablito",
+      "rol": "mesero",
+      "id": 6
     }
   ],
   "producto": [
     {
       "mesa": 2,
-      "producto": "Cordon Bleu de Pollo",
-      "precio": 10,
-      "id": 1
-    },
-    {
-      "mesa": 2,
       "producto": "Spaghetti al Pesto con Camarones",
       "precio": 15,
       "id": 2
+    },
+    {
+      "mesa": 3,
+      "producto": "Tacos de merluza",
+      "precio": 10,
+      "id": 4
     }
   ]
 }

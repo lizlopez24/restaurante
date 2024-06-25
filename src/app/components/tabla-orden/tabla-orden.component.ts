@@ -32,4 +32,9 @@ export class TablaOrdenComponent {
       }
     });
   }
+
+  delete(id: any) {
+    this.servicio.deleteProducto(id).subscribe()
+    window.location.reload()
+  }
 }
