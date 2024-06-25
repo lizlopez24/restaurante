@@ -9,7 +9,7 @@ export class ProductosService {
 
   constructor(private http:HttpClient) { }
 
-  private API_PRODUCTOS='http://localhost:9000/producto'
+  private API_PRODUCTOS='http://localhost:9000/productos'
 
   postProductos(producto:any):Observable<any>{
     return this.http.post(this.API_PRODUCTOS, producto)

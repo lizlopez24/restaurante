@@ -23,6 +23,7 @@ precio:any;
 ngOnInit(){
   this.servicioProducto.getProductos().subscribe(p=>{
     this.productosRegistrado=p;
+    console.log(this.productosRegistrado)
   })
   
 };
