@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { LoginService } from '../../services/login.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-usuario',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,RouterLink],
   templateUrl: './formulario-usuario.component.html',
   styleUrl: './formulario-usuario.component.css'
 })

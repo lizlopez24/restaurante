@@ -32,21 +32,15 @@
   "producto": [
     {
       "mesa": 2,
-      "producto": "Spaghetti al Pesto con Camarones",
-      "precio": 15,
+      "producto": "Cordon Bleu de Pollo",
+      "precio": 10,
       "id": 1
     },
     {
       "mesa": 2,
-      "producto": "Quiche Lorraine",
-      "precio": 7,
+      "producto": "Spaghetti al Pesto con Camarones",
+      "precio": 15,
       "id": 2
-    },
-    {
-      "mesa": 6,
-      "producto": "Ratatouille",
-      "precio": 11,
-      "id": 3
     }
   ]
 }

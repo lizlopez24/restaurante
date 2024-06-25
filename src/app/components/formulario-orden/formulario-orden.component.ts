@@ -35,7 +35,6 @@ registrar(item:any){
   console.log(item)
   console.log(this.mesa)
   this.crearProducto(item)
-  this.mesa="";
 }
 productoJson:any;
 
