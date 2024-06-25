@@ -27,17 +27,17 @@
                     <div class="details-btn">
                     </div>
                   </div>
-                  <div class="card-body" [(ngModel)]="producto">
+                  <div class="card-body">
                     <small>
                       <a
                         href="#"
                         class="text-muted"
-                        style="text-decoration: none; margin: 5px; font-weight: bold"
-                        >{{ item.producto }}</a
+                        style="text-decoration: none; margin: 5px; font-weight: bold" [(ngModel)]="producto"
+                        >{{ item.producto }} </a
                       >
                     </small>
-                    <div class="price" [(ngModel)]="precio">
-                      <span class="text-warning">Price: ${{ item.precio }}</span>
+                    <div class="price">
+                      <span class="text-warning" [(ngModel)]="precio">Price: ${{ item.precio }} </span>
                     </div>
                   </div>
                 </div>
